@@ -1,8 +1,7 @@
-console.log(Jsuser.name);
-// console.log( Jsuser[mySym]);
+const myNums = [1, 2, 3, ];
 
-// Jsuser.email = "swarrup@asusgmail.com";
+const myTotal = myNums.reduce(function(acc, currVal ){
+    return acc + currval;
+},0)
 
-// Jsuser.email = "swarup@mangogmail.com";
-// Object.freeze(Jsuser);
-// console.log(Jsuser);
+console.log(myTotal)

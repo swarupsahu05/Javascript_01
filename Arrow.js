@@ -1,11 +1,11 @@
-const user ={
-    username: "swarup",
-    price: 1000,
+// const user ={
+//     username: "swarup",
+//     price: 1000,
 
-    welcomeprofile: function(){
-        console.log(`${this.username}, welcome to profile price `);
-    }
-}
+//     welcomeprofile: function(){
+//         console.log(`${this.username}, welcome to profile price `);
+//     }
+// }
 // user.welcomeprofile()
 
 // console.log(this);
@@ -35,6 +35,16 @@ const user ={
 
 // const addTwo = (num1, num2) => num1 + num2;
 
-const addTwo = (num1, num2) => (num1 + num2)//implesit return 
+// const addTwo = (num1, num2) => (num1 + num2)//implesit return 
 
-console.log (addTwo(2, 3)); // 5
+// console.log (addTwo(2, 3)); // 5
+
+
+(function eggRoll ( ) {
+    console.log("IIFE function");
+})();
+//eggRoll(); // manually call
+
+((name) => {
+    console.log(`IIFE arrow function: ${name}`);
+})('swarup');
