@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js with swarup</h1>
+    <button id = "stop">stop</button>
+</body>
+<script>
+    const hiswarup = function(){
+        console.log("swarup")
+         document.querySelector('h1')
+    .innerHTML= " Ebar pujo kolkata te"
+    
+    }
+    // document.querySelector('h1')
+    // .innerHTML= " Ebar pujo kolkata te"
+
+    const changeText = function (){
+        document.querySelector("h1")
+        .innerHTML = "Ebar pjo kolkatate"
+    }
+    const timeHatao = setTimeout(hiswarup,2000)
+    document.querySelector('#stop')
+    .addEventListener('click', function(){
+        clearTimeout(timeHatao)
+        console.log("STOPPED")
+    })
+    
+    
+</script>
+</html>
